@@ -59,7 +59,7 @@ This project implements a simple feedforward **neural network in pure C**, optim
 
 ## 📸 Demo
 
-<img src="https://github.com/user-attachments/assets/4a3c3b33-0d9c-42f5-a9f1-a53a45659e2b" width="300"/>  
+<img src="![image](https://github.com/user-attachments/assets/9543724c-95ba-4bef-9935-d543d10ac0f3)" width="300"/>  
 <img src="https://github.com/user-attachments/assets/5f518879-daef-46db-baa1-51efd7e7bea2" width="300"/>  
 <img src="https://github.com/user-attachments/assets/5ef61d38-8e8a-47c6-bbc2-4532ee1977a2" width="300"/>
 
