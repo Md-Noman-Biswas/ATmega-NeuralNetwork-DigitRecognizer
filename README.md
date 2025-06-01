@@ -1,4 +1,4 @@
-# 🧠 ATmega Neural Network Digit Recognizer
+# ATmega Neural Network Digit Recognizer
 
 This project implements a simple feedforward **neural network in pure C**, optimized to run on an **ATmega328P microcontroller**. The goal is to recognize binary-encoded digits from a 4x4 keypad input and display the result on an LCD.
 
@@ -6,7 +6,7 @@ This project implements a simple feedforward **neural network in pure C**, optim
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 - 🎓 **Course:** Microprocessor System Design  
 - 🎯 **Goal:** Build a digit recognizer that runs independently on an ATmega MCU  
@@ -14,7 +14,7 @@ This project implements a simple feedforward **neural network in pure C**, optim
 
 ---
 
-## 🚀 Features
+## Features
 
 - ✨ Pure C neural network inference
 - 🔢 Takes 4x4 binary grid input (keypad or simulated)
@@ -25,7 +25,7 @@ This project implements a simple feedforward **neural network in pure C**, optim
 
 ---
 
-## 🧠 Neural Network Architecture
+##  Neural Network Architecture
 
 - **Input layer:** 16 inputs (for 4x4 binary pattern)  
 - **Hidden layer:** 1 layer with 6 neurons  
@@ -38,7 +38,7 @@ This project implements a simple feedforward **neural network in pure C**, optim
 
 ---
 
-## 🧪 Workflow
+##  Workflow
 
 1. **Data Preparation (Python)**  
    Prepare binary digit representations as training data.
