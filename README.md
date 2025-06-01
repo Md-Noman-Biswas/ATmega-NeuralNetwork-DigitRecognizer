@@ -1,14 +1,14 @@
 # ATmega Neural Network Digit Recognizer
 
-This project implements a simple feedforward **neural network in pure C**, optimized to run on an **ATmega328P microcontroller**. The goal is to recognize binary-encoded digits from a 4x4 keypad input and display the result on an LCD.
+This project implements a simple feedforward **neural network in pure C**, optimized to run on an **ATmega328P microcontroller**. The goal is to recognize binary-encoded digits from a 4x4 keypad input and display the result on an **OLED display**.
 
 > 🔧 **Trained in Python. Implemented in C. Runs on 8-bit ATmega.**
 
 ---
 
-##  Project Overview
+## Project Overview
 
-- 🎓 **Course:** Microprocessor 
+- 🎓 **Course:** Microprocessor  
 - 🎯 **Goal:** Build a digit recognizer that runs independently on an ATmega MCU  
 - 💡 **Main Challenge:** Implementing a neural network **without any libraries** in **pure C**
 
@@ -16,29 +16,30 @@ This project implements a simple feedforward **neural network in pure C**, optim
 
 ## Features
 
-- ✨ Pure C neural network inference
-- 🔢 Takes 4x4 binary grid input (keypad or simulated)
-- 📟 Displays recognized digit on LCD
-- 📦 Trained weights stored in EEPROM
-- 🧮 Manual matrix multiplication and activation functions
-- 💾 Compact and optimized for microcontroller limitations
+- ✨ Pure C neural network inference  
+- 🔢 Takes 4x4 binary grid input (keypad or simulated)  
+- 🖥️ Displays recognized digit on an **OLED display**  
+- 📦 Trained weights stored in EEPROM  
+- 🧮 Manual matrix multiplication and activation functions  
+- 💾 Compact and optimized for microcontroller limitations  
 
 ---
 
-##  Neural Network Architecture
+## Neural Network Architecture
 
 - **Input layer:** 16 inputs (for 4x4 binary pattern)  
 - **Hidden layer:** 1 layer with 6 neurons  
-- **Output layer:** 10 neurons (digits 0–9)
+- **Output layer:** 10 neurons (digits 0–9)  
 
-- **Activation functions:** 
+- **Activation functions:**  
   - Sigmoid for the hidden layer  
   - Softmax for the output layer  
-- **Forward pass:** Implemented in Python with NumPy; includes fixed-point weight export for C implementation (scaled by 1000, stored as int16_t)
+
+- **Forward pass:** Implemented in Python with NumPy; includes fixed-point weight export for C implementation (scaled by 1000, stored as `int16_t`)
 
 ---
 
-##  Workflow
+## Workflow
 
 1. **Data Preparation (Python)**  
    Prepare binary digit representations as training data.
@@ -53,7 +54,7 @@ This project implements a simple feedforward **neural network in pure C**, optim
    Write all inference logic in C: matrix multiply, activation, max-index prediction.
 
 5. **Deployment**  
-   Flash code to ATmega328P, feed binary input via keypad, and show prediction on LCD.
+   Flash code to ATmega328P, feed binary input via keypad, and show prediction on the **OLED display**.
 
 ---
 
@@ -69,7 +70,7 @@ This project implements a simple feedforward **neural network in pure C**, optim
 
 ```bash
 📦 ATmega-NeuralNetwork-DigitRecognizer
-├── Neural Network in C.cpp        # Core neural network inference in C
-├── test.cpp                       # Optional testing simulation in C++
+├── Neural Network in C.cpp           # Core neural network inference in C
+├── test.cpp                          # Optional testing simulation in C++
 ├── Binary pattern recognition.ipynb  # Python notebook for training
-├── CheapNeurons_*.docx           # Project documentation
+├── CheapNeurons_*.docx               # Project documentation
