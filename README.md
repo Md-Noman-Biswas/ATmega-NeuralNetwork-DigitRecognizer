@@ -28,11 +28,13 @@ This project implements a simple feedforward **neural network in pure C**, optim
 ## 🧠 Neural Network Architecture
 
 - **Input layer:** 16 inputs (for 4x4 binary pattern)  
-- **Hidden layer:** 1 layer (customizable size)  
+- **Hidden layer:** 1 layer with 6 neurons  
 - **Output layer:** 10 neurons (digits 0–9)
 
-- **Activation functions:** Step / ReLU / Manual max selection  
-- **Forward pass:** Fully written in C with fixed-point style logic (if needed)
+- **Activation functions:** 
+  - Sigmoid for the hidden layer  
+  - Softmax for the output layer  
+- **Forward pass:** Implemented in Python with NumPy; includes fixed-point weight export for C implementation (scaled by 1000, stored as int16_t)
 
 ---
 
@@ -51,18 +53,15 @@ This project implements a simple feedforward **neural network in pure C**, optim
    Write all inference logic in C: matrix multiply, activation, max-index prediction.
 
 5. **Deployment**  
-   Flash code to ATmega32P, feed binary input via keypad, and show prediction on LCD.
+   Flash code to ATmega328P, feed binary input via keypad, and show prediction on LCD.
 
 ---
 
-## 📸 Demo 
+## 📸 Demo
 
-![image](https://github.com/user-attachments/assets/4a3c3b33-0d9c-42f5-a9f1-a53a45659e2b)
-![image](https://github.com/user-attachments/assets/5f518879-daef-46db-baa1-51efd7e7bea2)
-![image](https://github.com/user-attachments/assets/5ef61d38-8e8a-47c6-bbc2-4532ee1977a2)
-
-
-
+<img src="https://github.com/user-attachments/assets/4a3c3b33-0d9c-42f5-a9f1-a53a45659e2b" width="300"/>  
+<img src="https://github.com/user-attachments/assets/5f518879-daef-46db-baa1-51efd7e7bea2" width="300"/>  
+<img src="https://github.com/user-attachments/assets/5ef61d38-8e8a-47c6-bbc2-4532ee1977a2" width="300"/>
 
 ---
 
