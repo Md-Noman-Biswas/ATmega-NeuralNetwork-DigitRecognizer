@@ -8,7 +8,7 @@ This project implements a simple feedforward **neural network in pure C**, optim
 
 ##  Project Overview
 
-- 🎓 **Course:** Microprocessor System Design  
+- 🎓 **Course:** Microprocessor 
 - 🎯 **Goal:** Build a digit recognizer that runs independently on an ATmega MCU  
 - 💡 **Main Challenge:** Implementing a neural network **without any libraries** in **pure C**
 
