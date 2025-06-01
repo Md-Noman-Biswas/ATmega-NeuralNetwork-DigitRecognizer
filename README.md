@@ -73,5 +73,3 @@ This project implements a simple feedforward **neural network in pure C**, optim
 ├── test.cpp                       # Optional testing simulation in C++
 ├── Binary pattern recognition.ipynb  # Python notebook for training
 ├── CheapNeurons_*.docx           # Project documentation
-├── .vscode/                      # VSCode settings
-├── .cph/ / .ipynb_checkpoints/   # Temp files (can be ignored)
