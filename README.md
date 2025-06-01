@@ -16,8 +16,8 @@ This project implements a simple feedforward **neural network in pure C**, optim
 
 ## 🚀 Features
 
-- ✨ Pure C neural network inference (no libraries, no floating point)
-- 🔢 Takes 4x4 binary grid input (e.g., keypad or simulated)
+- ✨ Pure C neural network inference
+- 🔢 Takes 4x4 binary grid input (keypad or simulated)
 - 📟 Displays recognized digit on LCD
 - 📦 Trained weights stored in EEPROM
 - 🧮 Manual matrix multiplication and activation functions
@@ -55,9 +55,14 @@ This project implements a simple feedforward **neural network in pure C**, optim
 
 ---
 
-## 📸 Demo (Add screenshots or video here)
+## 📸 Demo 
 
-> _Insert a photo or gif of your setup with keypad input and LCD output here._
+![image](https://github.com/user-attachments/assets/4a3c3b33-0d9c-42f5-a9f1-a53a45659e2b)
+![image](https://github.com/user-attachments/assets/5f518879-daef-46db-baa1-51efd7e7bea2)
+![image](https://github.com/user-attachments/assets/5ef61d38-8e8a-47c6-bbc2-4532ee1977a2)
+
+
+
 
 ---
 
